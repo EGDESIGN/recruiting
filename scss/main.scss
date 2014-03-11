@@ -46,7 +46,7 @@ article{
 	@include breakpoint(max-width){
 		float: none;
 		display: block;
-		padding: 40px 0;
+		padding: 0;
 		width: $max-width-inner;
 		margin: 140px auto;
 	}
@@ -72,11 +72,12 @@ footer a{
 }
 
 
-
-// Carousel styles
 .full-bleed{
 	position: relative;
 	padding: 0;
+	@include breakpoint(max-width){
+		margin-top: -140px;
+	}
 }
 .overlay-copy{
 	@include column(12);
@@ -102,20 +103,20 @@ footer a{
 	font-size: 2.4em;
 	text-align: center;
 	@include breakpoint(large){
-		font-size: 3em;
+		font-size: 5em;
 	}
 }
 
 #intro{
 	@include breakpoint(medium){
-		background: url('../images/placecat.jpg') center center no-repeat;
+		background: url('../images/whiteboard.jpg') center center no-repeat;
 		background-size: 100% auto;
 	}
 }
 
 #team{
 	@include breakpoint(medium){
-		background: url('../images/placebill.jpg') center center no-repeat;
+		background: url('../images/design-team.jpg') center center no-repeat;
 		background-size: 100% auto;
 	}
 }

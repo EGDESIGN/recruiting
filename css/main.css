@@ -103,7 +103,7 @@ article {
   .constrained {
     float: none;
     display: block;
-    padding: 40px 0;
+    padding: 0;
     width: 1060px;
     margin: 140px auto; } }
 
@@ -127,6 +127,9 @@ footer a {
 .full-bleed {
   position: relative;
   padding: 0; }
+  @media (min-width: 1060px) {
+    .full-bleed {
+      margin-top: -140px; } }
 
 .overlay-copy {
   display: inline-block;
@@ -155,16 +158,16 @@ footer a {
   text-align: center; }
   @media (min-width: 960px) {
     .overlay-copy h2 {
-      font-size: 3em; } }
+      font-size: 5em; } }
 
 @media (min-width: 680px) {
   #intro {
-    background: url("../images/placecat.jpg") center center no-repeat;
+    background: url("../images/whiteboard.jpg") center center no-repeat;
     background-size: 100% auto; } }
 
 @media (min-width: 680px) {
   #team {
-    background: url("../images/placebill.jpg") center center no-repeat;
+    background: url("../images/design-team.jpg") center center no-repeat;
     background-size: 100% auto; } }
 
 #intro .overlay-copy {
