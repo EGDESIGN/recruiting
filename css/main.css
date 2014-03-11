@@ -60,49 +60,160 @@ body {
   body:after {
     clear: both; }
 
-h1 {
-  font-size: 2em;
-  text-align: center;
-  display: block;
-  margin: 1em auto; }
-
-article,
-header,
-footer {
-  background: #f9f9f9;
-  border: 1px solid #000;
-  min-height: 15em;
-  text-transform: uppercase;
-  transition: width 500ms; }
-
+/* green */
+/*dark blue*/
+/*light blue*/
+/*pinkish-red*/
+/*orange you glad we made this a variable? */
+/*yellow*/
 body {
+  background: #f7f7f7;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
-.wrapper {
-  margin: 0 auto;
-  max-width: 1060px; }
+h1 {
+  font-size: 2.4em;
+  line-height: 2.6em; }
 
-header,
-article,
-footer {
+h2 {
+  font-size: 1.6em;
+  line-height: 1.8em; }
+
+h3 {
+  font-size: 1.2em;
+  line-height: 1.6em; }
+
+p {
+  line-height: 1.5em; }
+
+.cap-lead {
+  color: #a854a1;
+  font-size: 1.6em; }
+
+.wrapper {
+  margin: 0 auto; }
+
+article {
+  padding: 40px 10%;
   display: inline-block;
   float: left;
   width: 100%;
   margin: 0 0%; }
 
-@media (min-width: 600px) {
-  .area2,
-  .area3 {
-    display: inline-block;
-    float: left;
-    width: 50%;
-    margin: 0 0%; } }
+@media (min-width: 1060px) {
+  .constrained {
+    float: none;
+    display: block;
+    padding: 40px 0;
+    width: 1060px;
+    margin: 140px auto; } }
 
-@media (min-width: 600px) {
-  .area4,
-  .area5,
-  .area6 {
-    display: inline-block;
-    float: left;
-    width: 33.33333%;
-    margin: 0 0%; } }
+footer {
+  background: #51b0e0;
+  color: #fff;
+  margin: 0 0;
+  float: left;
+  padding: 20px 10%;
+  position: fixed;
+  bottom: 0;
+  text-align: center;
+  width: 100%;
+  z-index: 9999; }
+
+footer a {
+  color: #fff; }
+  footer a:hover {
+    color: #eccd1f; }
+
+.full-bleed {
+  position: relative;
+  padding: 0; }
+
+.overlay-copy {
+  display: inline-block;
+  float: left;
+  width: 100%;
+  margin: 0 0%;
+  color: #fff;
+  padding: 40px; }
+  @media (min-width: 680px) {
+    .overlay-copy {
+      margin: 80px 10%;
+      padding: 80px;
+      width: 80%; } }
+  @media (min-width: 960px) {
+    .overlay-copy {
+      margin: 140px 10%; } }
+  @media (min-width: 1060px) {
+    .overlay-copy {
+      float: none;
+      display: block;
+      width: 1060px;
+      margin: 140px auto; } }
+
+.overlay-copy h2 {
+  font-size: 2.4em;
+  text-align: center; }
+  @media (min-width: 960px) {
+    .overlay-copy h2 {
+      font-size: 3em; } }
+
+@media (min-width: 680px) {
+  #intro {
+    background: url("../images/placecat.jpg") center center no-repeat;
+    background-size: 100% auto; } }
+
+@media (min-width: 680px) {
+  #team {
+    background: url("../images/placebill.jpg") center center no-repeat;
+    background-size: 100% auto; } }
+
+#intro .overlay-copy {
+  background: #ed2d92; }
+  @media (min-width: 680px) {
+    #intro .overlay-copy {
+      background: rgba(237, 45, 146, 0.7); } }
+
+#team .overlay-copy {
+  background: #f7941d; }
+  @media (min-width: 680px) {
+    #team .overlay-copy {
+      background: rgba(247, 148, 29, 0.7); } }
+
+#roles {
+  padding-bottom: 200px; }
+  @media (min-width: 680px) {
+    #roles {
+      padding-bottom: 100px; } }
+
+.sub-units {
+  display: inline-block;
+  float: left;
+  width: 100%;
+  margin: 0 0%;
+  margin-bottom: 40px; }
+  @media (min-width: 960px) {
+    .sub-units {
+      display: inline-block;
+      float: left;
+      width: 50%;
+      margin: 0 0%;
+      min-height: 500px;
+      margin-bottom: 40px; } }
+
+.sub-unit-icon-wrap {
+  display: inline-block;
+  float: left;
+  width: 25%;
+  margin: 0 0%;
+  height: 180px;
+  background: #4bc4d4; }
+
+.sub-unit-wrap {
+  display: inline-block;
+  float: left;
+  width: 75%;
+  margin: 0 0%;
+  padding: 0 0 20px 20px; }
+
+.odd .sub-unit-wrap {
+  padding-right: 40px; }

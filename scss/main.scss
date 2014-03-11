@@ -3,35 +3,164 @@
 @import "includes/grid.scss";
 @import "includes/variables.scss";
 @import "includes/mixins.scss";
-@import "includes/wireframe.scss";
 
 body{
+	background: #f7f7f7;
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
+h1{
+		font-size: 2.4em;
+		line-height: 2.6em;
+}
+
+h2{
+		font-size: 1.6em;
+		line-height: 1.8em;
+}
+
+h3{
+		font-size: 1.2em;
+		line-height: 1.6em;
+}
+p{
+	line-height: 1.5em;
+}
+
+.cap-lead{
+	color: $purple;
+	font-size: 1.6em;
+}
+
+
 .wrapper{
 	margin:0 auto;
-	max-width: 1060px;
 }
 
 
-header,
-article,
-footer{
+article{
+	padding: 40px 10%;
 	@include column(12);
 }
-
-.area2,
-.area3{
-	  @include breakpoint(medium){
-	  	 @include column(6);
-	 }
+.constrained{
+	@include breakpoint(max-width){
+		float: none;
+		display: block;
+		padding: 40px 0;
+		width: $max-width-inner;
+		margin: 140px auto;
+	}
 }
 
-.area4,
-.area5,
-.area6{
-	  @include breakpoint(medium){
-	  	 @include column(4);
-	 }
+footer{
+	background: $dark-blue;
+	color: #fff;
+	margin: 0 0;
+	float: left;
+	padding: 20px 10%;
+	position: fixed;
+		bottom: 0;
+	text-align: center;
+	width: 100%;
+	z-index: 9999;
 }
+footer a{
+	color: #fff;
+	&:hover{
+		color: $yellow;
+	}
+}
+
+
+
+// Carousel styles
+.full-bleed{
+	position: relative;
+	padding: 0;
+}
+.overlay-copy{
+	@include column(12);
+	color: #fff;
+	padding: 40px;
+	@include breakpoint(medium){
+		margin: 80px 10%;
+		padding: 80px;
+		width: 80%;
+	}
+	@include breakpoint(large){
+		margin: 140px 10%;
+	}
+
+	@include breakpoint(max-width){
+		float: none;
+		display: block;
+		width: $max-width-inner;
+		margin: 140px auto;
+	}
+}
+.overlay-copy h2{
+	font-size: 2.4em;
+	text-align: center;
+	@include breakpoint(large){
+		font-size: 3em;
+	}
+}
+
+#intro{
+	@include breakpoint(medium){
+		background: url('../images/placecat.jpg') center center no-repeat;
+		background-size: 100% auto;
+	}
+}
+
+#team{
+	@include breakpoint(medium){
+		background: url('../images/placebill.jpg') center center no-repeat;
+		background-size: 100% auto;
+	}
+}
+
+#intro .overlay-copy{
+	background: $pink;
+	@include breakpoint(medium){
+		background: rgba(237,45,146,.7);
+	}
+}
+
+#team .overlay-copy{
+	background: $orange;
+	@include breakpoint(medium){
+		background: rgba(247,148,29,.7);
+	}
+}
+#roles{
+	padding-bottom: 200px;
+	@include breakpoint(medium){
+		padding-bottom: 100px;
+
+	}
+}
+
+//4-up layouts
+.sub-units{
+	@include column(12);
+	margin-bottom: 40px;
+	@include breakpoint(large){
+		@include column(6);
+		min-height: 500px;
+		margin-bottom: 40px;
+	}
+}
+.sub-unit-icon-wrap{
+	@include column(3);
+	height: 180px;
+	background: $light-blue;
+}
+.sub-unit-wrap{
+	@include column(9);
+	padding: 0 0 20px 20px;
+}
+.odd .sub-unit-wrap{
+	padding-right: 40px;
+}
+

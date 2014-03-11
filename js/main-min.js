@@ -1,1 +1,1 @@
-$(document).ready(function(){});
+$(document).ready(function(){var e={setUpCarousel:function(){$(".m-carousel").carousel()},init:function(){e.setUpCarousel()}};e.init()});

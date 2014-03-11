@@ -7,12 +7,16 @@
 // source: Chris Coyier //
 // http://css-tricks.com/media-queries-sass-3-2-and-codekit/ //
 //////////////////////////////////
+$max-width-inner: 1060px;
 
 @mixin breakpoint($point) {
   @if $point == large {
-    @media (min-width: 800px) { @content; }
+    @media (min-width: 960px) { @content; }
   }
   @else if $point == medium {
-    @media (min-width: 600px)  { @content; }
+    @media (min-width: 680px)  { @content; }
+  }
+    @else if $point == max-width {
+    @media (min-width: $max-width-inner)  { @content; }
   }
 }
