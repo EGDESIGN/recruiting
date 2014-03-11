@@ -1,0 +1,17 @@
+h1{
+		font-size: 2em;
+		text-align: center;
+		display: block;
+		margin: 1em auto;
+}
+
+article,
+header,
+footer{
+	background: #f9f9f9;
+	border: 1px solid #000;
+	min-height: 15em;
+	text-transform: uppercase;
+	transition: width 500ms;
+}
+

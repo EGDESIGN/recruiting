@@ -1,0 +1,18 @@
+//////////////////////////////////
+// compass mixins for inclusion //
+//////////////////////////////////
+
+//////////////////////////////////
+// media query abstractions //////
+// source: Chris Coyier //
+// http://css-tricks.com/media-queries-sass-3-2-and-codekit/ //
+//////////////////////////////////
+
+@mixin breakpoint($point) {
+  @if $point == large {
+    @media (min-width: 800px) { @content; }
+  }
+  @else if $point == medium {
+    @media (min-width: 600px)  { @content; }
+  }
+}

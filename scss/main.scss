@@ -1,0 +1,37 @@
+// Resets and Mixins
+@import "includes/reset.scss";
+@import "includes/grid.scss";
+@import "includes/variables.scss";
+@import "includes/mixins.scss";
+@import "includes/wireframe.scss";
+
+body{
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.wrapper{
+	margin:0 auto;
+	max-width: 1060px;
+}
+
+
+header,
+article,
+footer{
+	@include column(12);
+}
+
+.area2,
+.area3{
+	  @include breakpoint(medium){
+	  	 @include column(6);
+	 }
+}
+
+.area4,
+.area5,
+.area6{
+	  @include breakpoint(medium){
+	  	 @include column(4);
+	 }
+}
