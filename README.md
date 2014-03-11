@@ -1,4 +1,4 @@
-prototype-boilerpate
+EG Design Recruiting
 ====================
 
-My starting toolkit for in-browser design
+Recruiting site for EG Design team.
