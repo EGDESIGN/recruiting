@@ -11,25 +11,19 @@ body{
 
 h1{
 		font-size: 2.4em;
-		line-height: 2.6em;
+	
 }
 
 h2{
 		font-size: 1.6em;
-		line-height: 1.8em;
+
 }
 
 h3{
 		font-size: 1.2em;
-		line-height: 1.6em;
 }
 p{
 	line-height: 1.5em;
-}
-
-.cap-lead{
-	color: $purple;
-	font-size: 1.6em;
 }
 
 
@@ -82,6 +76,7 @@ footer a{
 .overlay-copy{
 	@include column(12);
 	color: #fff;
+	font-size: 1.8em;
 	padding: 40px;
 	@include breakpoint(medium){
 		margin: 80px 10%;
@@ -100,11 +95,16 @@ footer a{
 	}
 }
 .overlay-copy h2{
-	font-size: 2.4em;
+	font-size: 1.2em;
 	text-align: center;
 	@include breakpoint(large){
-		font-size: 5em;
+		font-size: 4em;
 	}
+}
+
+.team-name{
+	display:block;
+	text-align: center;
 }
 
 #intro{
@@ -112,6 +112,15 @@ footer a{
 		background: url('../images/whiteboard.jpg') center center no-repeat;
 		background-size: 100% auto;
 	}
+}
+
+.we-make-intro{
+	font-size: 2.4em;
+	padding: 40px 0;
+}
+.cap-lead{
+	color: $purple;
+	font-size: 1.8em;
 }
 
 #team{
@@ -124,14 +133,14 @@ footer a{
 #intro .overlay-copy{
 	background: $pink;
 	@include breakpoint(medium){
-		background: rgba(237,45,146,.7);
+		background: rgba(237,45,146,.9);
 	}
 }
 
 #team .overlay-copy{
 	background: $orange;
 	@include breakpoint(medium){
-		background: rgba(247,148,29,.7);
+		background: rgba(247,148,29,.9);
 	}
 }
 #roles{

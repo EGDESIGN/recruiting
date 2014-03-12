@@ -71,23 +71,16 @@ body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
 h1 {
-  font-size: 2.4em;
-  line-height: 2.6em; }
+  font-size: 2.4em; }
 
 h2 {
-  font-size: 1.6em;
-  line-height: 1.8em; }
+  font-size: 1.6em; }
 
 h3 {
-  font-size: 1.2em;
-  line-height: 1.6em; }
+  font-size: 1.2em; }
 
 p {
   line-height: 1.5em; }
-
-.cap-lead {
-  color: #a854a1;
-  font-size: 1.6em; }
 
 .wrapper {
   margin: 0 auto; }
@@ -137,6 +130,7 @@ footer a {
   width: 100%;
   margin: 0 0%;
   color: #fff;
+  font-size: 1.8em;
   padding: 40px; }
   @media (min-width: 680px) {
     .overlay-copy {
@@ -154,16 +148,28 @@ footer a {
       margin: 140px auto; } }
 
 .overlay-copy h2 {
-  font-size: 2.4em;
+  font-size: 1.2em;
   text-align: center; }
   @media (min-width: 960px) {
     .overlay-copy h2 {
-      font-size: 5em; } }
+      font-size: 4em; } }
+
+.team-name {
+  display: block;
+  text-align: center; }
 
 @media (min-width: 680px) {
   #intro {
     background: url("../images/whiteboard.jpg") center center no-repeat;
     background-size: 100% auto; } }
+
+.we-make-intro {
+  font-size: 2.4em;
+  padding: 40px 0; }
+
+.cap-lead {
+  color: #a854a1;
+  font-size: 1.8em; }
 
 @media (min-width: 680px) {
   #team {
@@ -174,13 +180,13 @@ footer a {
   background: #ed2d92; }
   @media (min-width: 680px) {
     #intro .overlay-copy {
-      background: rgba(237, 45, 146, 0.7); } }
+      background: rgba(237, 45, 146, 0.9); } }
 
 #team .overlay-copy {
   background: #f7941d; }
   @media (min-width: 680px) {
     #team .overlay-copy {
-      background: rgba(247, 148, 29, 0.7); } }
+      background: rgba(247, 148, 29, 0.9); } }
 
 #roles {
   padding-bottom: 200px; }
