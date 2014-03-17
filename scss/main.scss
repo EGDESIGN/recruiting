@@ -7,6 +7,8 @@
 body{
 	background: #f7f7f7;
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: 200;
+	font-size: 16px;
 }
 
 h1{
@@ -15,15 +17,66 @@ h1{
 }
 
 h2{
-		font-size: 1.6em;
-
+		font-size: 1.5em;
+		font-weight: bold;
+		line-height: 1.2em;
 }
 
-h3{
-		font-size: 1.2em;
-}
 p{
 	line-height: 1.5em;
+}
+
+a{
+	color: $pink;
+	text-decoration: none;
+	&:hover{
+		color: $light-blue;
+		text-decoration: underline;
+	}
+}
+
+.overlay-copy h2{
+	text-align: center;
+	font-size: 2.4em;
+	@include breakpoint(headline1){
+		font-size: 3em;
+	}
+	@include breakpoint(headline2){
+		font-size: 3.6em;
+	}
+
+	@include breakpoint(headline3){
+		font-size: 5em;
+	}
+}
+
+.overlay-copy p {
+	font-size: 1.2em;
+}
+
+
+.top-line{
+	@include breakpoint(medium){
+		@include column(1);
+		position: relative;
+	}
+}
+.top-line hr{
+	border-top: 1px solid #fff;
+	border-bottom: 0;
+	@include breakpoint(medium){
+		position: relative;
+		top: .35em;
+	}
+}
+
+.open-statement{
+	font-size: 1.2em;
+	display:block;
+	text-align: center;
+	@include breakpoint(medium){
+		@include column(10);
+	}
 }
 
 
@@ -36,18 +89,19 @@ article{
 	padding: 40px 10%;
 	@include column(12);
 }
+
 .constrained{
 	@include breakpoint(max-width){
 		float: none;
 		display: block;
-		padding: 0;
+		padding: 40px 10%;
 		width: $max-width-inner;
-		margin: 140px auto;
+		margin: 0 auto;
 	}
 }
 
 footer{
-	background: $dark-blue;
+	background: #656363;
 	color: #fff;
 	margin: 0 0;
 	float: left;
@@ -64,113 +118,174 @@ footer a{
 		color: $yellow;
 	}
 }
+.foot-wrap{
+	@include breakpoint(max-width){
+		float: none;
+		display: block;
+		padding: 0 10%;
+		width: $max-width-inner;
+		margin: 0 auto;
+	}
+}
 
 
 .full-bleed{
 	position: relative;
 	padding: 0;
-	@include breakpoint(max-width){
-		margin-top: -140px;
-	}
 }
 .overlay-copy{
 	@include column(12);
 	color: #fff;
-	font-size: 1.8em;
-	padding: 40px;
+	padding: 20px;
+
 	@include breakpoint(medium){
-		margin: 80px 10%;
-		padding: 80px;
+		padding: 60px 40px;
+		margin: 0 10%;
 		width: 80%;
 	}
 	@include breakpoint(large){
-		margin: 140px 10%;
+		padding: 80px 40px;
+		margin: 0 10%;
 	}
 
 	@include breakpoint(max-width){
 		float: none;
 		display: block;
 		width: $max-width-inner;
-		margin: 140px auto;
-	}
-}
-.overlay-copy h2{
-	font-size: 1.2em;
-	text-align: center;
-	@include breakpoint(large){
-		font-size: 4em;
+		margin: 0 auto;
 	}
 }
 
-.team-name{
-	display:block;
-	text-align: center;
+
+
+#about-intro{
+		background: url('../images/meeting_blue.jpg') center center no-repeat;
+		background-size: 130% auto;
+}
+.intro{
+	margin-bottom: 40px;
 }
 
-#intro{
-	@include breakpoint(medium){
-		background: url('../images/whiteboard.jpg') center center no-repeat;
-		background-size: 100% auto;
+#what .intro{
+	@include breakpoint(max-width){
+		margin-top: 40px;
+		float: left;
 	}
 }
 
-.we-make-intro{
-	font-size: 2.4em;
-	padding: 40px 0;
+.intro p{
+	font-size: 1.3em;
 }
-.cap-lead{
-	color: $purple;
-	font-size: 1.8em;
-}
+
 
 #team{
-	@include breakpoint(medium){
-		background: url('../images/design-team.jpg') center center no-repeat;
+		@include column(12);
+		background: url('../images/yay_green.jpg') top center no-repeat;
 		background-size: 100% auto;
-	}
+		@include breakpoint(medium){
+			backgrpund-position: center center;
+		}
 }
 
-#intro .overlay-copy{
-	background: $pink;
-	@include breakpoint(medium){
-		background: rgba(237,45,146,.9);
-	}
-}
 
-#team .overlay-copy{
-	background: $orange;
-	@include breakpoint(medium){
-		background: rgba(247,148,29,.9);
-	}
-}
 #roles{
-	padding-bottom: 200px;
+	padding-bottom: 140px;
 	@include breakpoint(medium){
 		padding-bottom: 100px;
 
 	}
 }
+.role-row .sub-units{
+	@include breakpoint(medium){
+		position: relative;
+	}
+}
+.role-row .sub-unit-wrap{
+	@include breakpoint(medium){
+		margin-left: 8em;
+	}
+}
+
+
+
+.role-abbrv{
+	font-size: 4em;
+	&.xd{
+		color: $light-blue;
+	}
+	&.xt{
+		color: $green;
+	}
+	&.cs{
+		color: $pink;
+	}
+	&.dm{
+		color: $orange;
+	}
+	@include breakpoint(medium){
+		position: absolute;
+		left: 0;
+		top: -9px;
+	}
+}
+
+.eg-logo{
+	background: url('../images/red-eg-logo.png') center center no-repeat;
+	background-size: 100% 100%;
+	display: inline-block;
+	font-size: 1px;
+	height: 30px;
+	text-indent: -9999px;
+	width: 30px;
+	@include breakpoint(medium){
+		float: left;
+	}
+}
+.cta{
+	display: inline-block;
+	float: left;
+	padding-left: 25px;
+}
 
 //4-up layouts
 .sub-units{
 	@include column(12);
-	margin-bottom: 40px;
+	padding-bottom: 40px;
 	@include breakpoint(large){
 		@include column(6);
-		min-height: 500px;
-		margin-bottom: 40px;
 	}
 }
-.sub-unit-icon-wrap{
-	@include column(3);
-	height: 180px;
-	background: $light-blue;
+.odd{
+	@include breakpoint(large){
+		padding-right: 40px;
+	}
 }
-.sub-unit-wrap{
-	@include column(9);
-	padding: 0 0 20px 20px;
+.role-row{
+	clear: both;
 }
-.odd .sub-unit-wrap{
-	padding-right: 40px;
+
+//3-up layouts
+#what .sub-units{
+	@include breakpoint(large){
+		padding-right: 20px;
+		@include column(4);
+	}	
+}
+#what .sub-unit-icon img{
+	display: none;
+	@include breakpoint(large){
+	border: 1px solid #000;
+	border-radius: 50%;
+	display: block;
+	height: auto;
+	margin: 0 5% 40px;
+	width: 90%;
+	}
+}
+
+.first, .middle{
+	@include breakpoint(large){
+
+	}
 }
 
