@@ -1,1 +1,1 @@
-$(document).ready(function(){var e={init:function(){}};e.init()});
+$(document).ready(function(){var e={init:function(){skrollr.init()}};e.init()});

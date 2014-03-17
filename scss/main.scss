@@ -94,7 +94,7 @@ article{
 	@include breakpoint(max-width){
 		float: none;
 		display: block;
-		padding: 40px 10%;
+		padding: 40px 0;
 		width: $max-width-inner;
 		margin: 0 auto;
 	}
@@ -283,9 +283,4 @@ footer a{
 	}
 }
 
-.first, .middle{
-	@include breakpoint(large){
-
-	}
-}
 
