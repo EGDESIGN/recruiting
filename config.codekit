@@ -34,6 +34,36 @@
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsSetByUser": 0
 		},
+	"\/images\/logo_Bluebird_Amex.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 3969,
+		"inputAbbreviatedPath": "\/images\/logo_Bluebird_Amex.png",
+		"outputAbbreviatedPath": "\/images\/logo_Bluebird_Amex.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/logo_Serve_Amex.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 10540,
+		"inputAbbreviatedPath": "\/images\/logo_Serve_Amex.png",
+		"outputAbbreviatedPath": "\/images\/logo_Serve_Amex.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/mail-icon.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 6733,
+		"inputAbbreviatedPath": "\/images\/mail-icon.png",
+		"outputAbbreviatedPath": "\/images\/mail-icon.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/images\/meeting_blue.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -104,10 +134,10 @@
 		},
 	"\/js\/main-min.js": {
 		"fileType": 64,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
+		"ignore": 1,
+		"ignoreWasSetByUser": 1,
 		"inputAbbreviatedPath": "\/js\/main-min.js",
-		"outputAbbreviatedPath": "\/js\/min\/main-min-ck.js",
+		"outputAbbreviatedPath": "\/js\/main-min-min.js",
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
@@ -117,17 +147,17 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/js\/main.js",
-		"outputAbbreviatedPath": "\/js\/min\/main-ck.js",
+		"outputAbbreviatedPath": "\/js\/main-min.js",
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
 	"\/js\/vendor\/html5shiv-min.js": {
 		"fileType": 64,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/js\/vendor\/html5shiv-min.js",
-		"outputAbbreviatedPath": "\/js\/vendor\/min\/html5shiv-min-ck.js",
+		"outputAbbreviatedPath": "\/js\/vendor\/html5shiv-min-min.js",
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
@@ -137,7 +167,7 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/js\/vendor\/html5shiv.js",
-		"outputAbbreviatedPath": "\/js\/vendor\/min\/html5shiv-ck.js",
+		"outputAbbreviatedPath": "\/js\/vendor\/html5shiv-min.js",
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
@@ -147,7 +177,7 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/js\/vendor\/jquery-1.10.2.min.js",
-		"outputAbbreviatedPath": "\/js\/vendor\/min\/jquery-1.10.2.min-ck.js",
+		"outputAbbreviatedPath": "\/js\/vendor\/jquery-1.10.2.min-min.js",
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
@@ -157,7 +187,7 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/js\/vendor\/respond.js",
-		"outputAbbreviatedPath": "\/js\/vendor\/min\/respond-ck.js",
+		"outputAbbreviatedPath": "\/js\/vendor\/respond-min.js",
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
@@ -167,17 +197,17 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/js\/vendor\/respond.min.js",
-		"outputAbbreviatedPath": "\/js\/vendor\/min\/respond.min-ck.js",
+		"outputAbbreviatedPath": "\/js\/vendor\/respond.min-min.js",
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
 	"\/js\/vendor\/selectivizr-min.js": {
 		"fileType": 64,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/js\/vendor\/selectivizr-min.js",
-		"outputAbbreviatedPath": "\/js\/vendor\/min\/selectivizr-min-ck.js",
+		"outputAbbreviatedPath": "\/js\/vendor\/selectivizr-min-min.js",
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
@@ -187,17 +217,17 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/js\/vendor\/selectivizr.js",
-		"outputAbbreviatedPath": "\/js\/vendor\/min\/selectivizr-ck.js",
+		"outputAbbreviatedPath": "\/js\/vendor\/selectivizr-min.js",
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
 	"\/js\/vendor\/skrollr-min.js": {
 		"fileType": 64,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/js\/vendor\/skrollr-min.js",
-		"outputAbbreviatedPath": "\/js\/vendor\/min\/skrollr-min-ck.js",
+		"outputAbbreviatedPath": "\/js\/vendor\/skrollr-min-min.js",
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
@@ -207,7 +237,7 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/js\/vendor\/skrollr.js",
-		"outputAbbreviatedPath": "\/js\/vendor\/min\/skrollr-ck.js",
+		"outputAbbreviatedPath": "\/js\/vendor\/skrollr-min.js",
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
@@ -491,10 +521,10 @@
 	"javascriptAutoOutputPathRelativePath": "\/min",
 	"javascriptAutoOutputPathReplace1": "",
 	"javascriptAutoOutputPathReplace2": "",
-	"javascriptAutoOutputPathStyle": 2,
+	"javascriptAutoOutputPathStyle": 0,
 	"javascriptCreateSourceMap": 1,
 	"javascriptOutputStyle": 1,
-	"javascriptOutputSuffix": "-ck",
+	"javascriptOutputSuffix": "-min",
 	"javascriptSyntaxCheckerStyle": 1,
 	"jsCheckerReservedNamesString": "",
 	"jsHintFlags2": {
@@ -973,7 +1003,7 @@
 			"flagValue": -1
 			},
 		"comments": {
-			"active": 1,
+			"active": 0,
 			"flagValue": -1
 			},
 		"comparisons": {

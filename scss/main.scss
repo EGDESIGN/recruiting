@@ -4,6 +4,20 @@
 @import "includes/variables.scss";
 @import "includes/mixins.scss";
 
+.small-down{
+	display: inline;
+	@include breakpoint(medium){
+		display: none;
+	}
+}
+
+.med-up{
+	display: none;
+	@include breakpoint(medium){
+		display: inline;
+	}
+}
+
 body{
 	background: #f7f7f7;
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -81,7 +95,7 @@ a{
 
 
 .wrapper{
-	margin:0 auto;
+	margin: 0 auto 0;
 	overflow: hidden;
 }
 
@@ -110,6 +124,7 @@ article{
 	@include column(12);
 	color: #fff;
 	padding: 20px;
+	position: relative;
 	overflow: hidden;
 
 	@include breakpoint(medium){
@@ -134,9 +149,14 @@ article{
 
 #about-intro{
 		background-image: inline-image('../images/meeting_blue.jpg');
-		background-position: center center;
+		background-position: top center;
 		background-repeat: no-repeat;
-		background-size: 130% auto;
+		background-position: fixed;
+		background-size: 155% auto;
+		padding: 50px 0;
+		@include breakpoint(medium){
+			background-size: 100% auto;
+		}
 }
 .intro{
 	margin-bottom: 40px;
@@ -241,20 +261,14 @@ article{
 // footer
 
 footer{
-	background: #656363;
 	color: #fff;
 	margin: 0 0;
 	float: left;
-	padding: 20px 5%;
 	position: fixed;
-		bottom: 0;
+		top: 0;
 	text-align: left;
 	width: 100%;
 	z-index: 9999;
-
-	@include breakpoint(medium){
-		padding: 10px 5%;
-	}
 }
 footer a{
 	color: $dark-blue;
@@ -263,29 +277,40 @@ footer a{
 	}
 }
 .mail-icon{
+	position: absolute;
+		left:0;
+		top: 0;
+}
+
+.activate-mail{
 	display: inline-block;
 	background-color: $dark-blue;
 	background-image: inline-image('../images/mail-icon.png');
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: 55%;
-	position: absolute;
-		left:0;
-		top: 0;
-	height: 100px;
-	width: 100px;
+	text-indent: -9999px;
+	height: 50px;
+	position: fixed;
+	width: 50px;
+	z-index:999;
 
-	@include breakpoint(medium){
-		height: 50px;
-		width: 50px;
+	&:hover{
+		background-color: $yellow;
 	}
 }
 .foot-wrap{
+	background: #656363;
+	height: 50px;
+	padding: 10px 0;
+	position: fixed;
+	left: 50px;
+	width: 100%;
+	z-index: 888;
 	@include breakpoint(max-width){
 		float: none;
 		display: block;
-		padding: 0 10%;
-		width: $max-width-inner;
+		padding: 10px 0;
 		margin: 0 auto;
 	}
 }
@@ -294,8 +319,9 @@ footer a{
 .cta{
 	display: inline-block;
 	float: left;
-	height: 60px;
+	height: 70px;
 	margin-left: 5%;
+		overflow: hidden;
 	padding-left: 100px;
 	@include breakpoint(medium){
 		height: 30px;

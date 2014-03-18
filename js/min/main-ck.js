@@ -1,1 +1,0 @@
-$(document).ready(function(){var i={init:function(){skrollr.init()}};i.init()});

@@ -20,8 +20,8 @@
     <body>
     <div class="wrapper">
         <section class="main">
-             <article id="about-intro" class="full-bleed">
-                <div class="overlay-copy" data-0="transform:scale(1);opacity:1;" data-80="transform:scale(2);opacity:0;">
+             <article id="about-intro" class="full-bleed" data-0="background-position:0px 0px;" data-end="background-position:0 -800px;">
+                <div class="overlay-copy" data-0="opacity: 1;" data-200="opacity: 0;">
                     <div class="top-copy">
                          <div class="top-line"><hr /></div>
                          <p class="open-statement">At Enterprise Growth, we’re changing the face of American Express.</p>
@@ -70,7 +70,7 @@
                 </div>
             </div>
             </article>
-            <article id="team" class="full-bleed">
+            <article id="team" class="full-bleed" data-0="background-position:0px 0px;" data-end="background-position:0 -300px;">
                 <div class="overlay-copy" data-0-top="transform:scale(1);opacity:1;" data-0-center-center="transform:scale(2);opacity:0;">
                     <h2>Our Team</h2>
                     <p>Whether showing off our culinary skills at our monthly potluck or leading mini improve comedy workshops, we create opportunities to weave our passions into our work.</p>
@@ -114,16 +114,15 @@
             </div>
             </article>
         </section>
-            <footer data-0="bottom: -200px;" data-200="bottom: 0">
-                <div class="mail-icon"></div>
+            <footer>
+                <div class="mail-icon"><a class="activate-mail" href="#">Contact Us</a></div>
                 <div class="foot-wrap">
-                    <p class="cta">Questions or hotsauce recommendations? <a href="mailto:hellodesign@aexp.com"><i class="mail-icon"></i>hellodesign@aexp.com</a></p>
+                    <p class="cta"><span class="small-down">Holler.</span><span class="med-up">Questions or hot sauce recommendations?</span> <a href="mailto:hellodesign@aexp.com"><i class="mail-icon"></i>hellodesign@aexp.com</a></p>
                 </div>
             </footer>
         </div>
     </body>
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor-source/jquery-1.10.2.min.js"><\/script>')</script>
+        <script src="js/vendor/jquery-1.10.2.min.js"></script>
         <script src="js/vendor/skrollr-min.js"></script>
          <script src="js/main-min.js"></script>
 </html>
