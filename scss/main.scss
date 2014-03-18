@@ -46,6 +46,9 @@ h2{
 p{
 	line-height: 1.5em;
 }
+em{
+	font-style: italic;
+}
 
 a{
 	color: $orange;
@@ -327,7 +330,6 @@ footer a{
 	height: 50px;
 	padding: 10px 0;
 	position: fixed;
-	left: 50px;
 	width: 100%;
 	z-index: 888;
 	@include breakpoint(max-width){
@@ -344,7 +346,7 @@ footer a{
 	float: left;
 	height: 70px;
 	position: absolute;
-	right: 100px;
+	right: 40px;
 		overflow: hidden;
 	@include breakpoint(medium){
 		height: 30px;
@@ -387,4 +389,13 @@ footer a{
 	}
 }
 
+
+.flip {
+	color: #000;
+	display: block;
+	position: relative;
+	height: 2em;
+	width: 4em;
+
+}
 
