@@ -49,6 +49,8 @@ $(document).ready(function () {
 			
 		},
 		init: function(){
+			var ieCheck = $('body').hasClass('lt-ie10');
+
 			$('.activate-mail').on('click', function(e){
 				e.preventDefault();
 
@@ -58,7 +60,7 @@ $(document).ready(function () {
 			});
 			
 			recruit.isTouch = recruit.touchTest();
-			if(recruit.isTouch === false){
+			if(recruit.isTouch === false && !ieCheck){
 				// intialize skrollr parallax plugin if not a touch device.
 				var footerThreshold = 70;
 				skrollr.init({
@@ -85,6 +87,14 @@ $(document).ready(function () {
 				});
 
 			}
+
+
+		if(ieCheck){
+			$('.ie-message .close-it').click(function(){
+				$('.ie-message').fadeOut('fast');
+				return false;
+			});
+		}
 		}
 	};
 

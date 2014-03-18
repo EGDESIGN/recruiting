@@ -16,4 +16,4 @@ footer{color:#fff;margin:0 0;float:left;position:fixed;top:0;text-align:left;wid
 @media (min-width: 960px){.odd{padding-right:40px}}
 .role-row{clear:both}@media (min-width: 960px){#what .sub-units{padding-right:20px;display:inline-block;float:left;width:33.33333%;margin:0 0%}}
 #what .sub-unit-icon img{display:none}@media (min-width: 960px){#what .sub-unit-icon img{display:block;height:auto;margin:0 auto 40px;width:70%}}
-.flip{color:#000;display:block;position:relative;height:2em;width:4em}
+.ie-message{position:fixed;bottom:0;width:100%;background:#ed2d92;color:#fff;padding:40px}.ie-message .close-it{color:#fff;position:absolute;right:10px;top:10px}

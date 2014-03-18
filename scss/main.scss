@@ -365,12 +365,18 @@ footer a{
 }
 
 
-.flip {
-	color: #000;
-	display: block;
-	position: relative;
-	height: 2em;
-	width: 4em;
-
+.ie-message{
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	background: $pink;
+	color: #fff;
+	padding: 40px;
 }
 
+.ie-message .close-it{
+	color: #fff;
+	position: absolute;
+	right: 10px;
+	top: 10px;
+}
