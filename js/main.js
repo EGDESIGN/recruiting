@@ -24,7 +24,7 @@ $(document).ready(function () {
 				recruit.footerDrawer.addClass('closed');
 				recruit.footer.animate({
 				top: "90%"
-				}, 200, function(){
+				}, 800, 'easeOutBounce', function(){
 					recruit.footerDrawer.removeClass('working');
 				});
 			});
@@ -32,16 +32,21 @@ $(document).ready(function () {
 		slideMailFooterOpen: function(){
 			recruit.footerDrawer.addClass('working');
 			recruit.footer.animate({
+				top: '93%'
+			}, 200, 'easeOutCubic', function(){
+				recruit.footer.animate({
 				top: "0"
 				}, 200, function(){
 					recruit.footerDrawer.animate({
 						width: "100%"
-					}, 500, function(){
+					}, 500, 'easeOutQuad', function(){
 						recruit.footerCta.fadeIn('fast');
 						recruit.footerDrawer.removeClass('closed');
 						recruit.footerDrawer.removeClass('working');
 					});
 				});
+			});
+			
 		},
 		init: function(){
 			$('.activate-mail').on('click', function(e){

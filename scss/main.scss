@@ -39,12 +39,13 @@ h1{
 h2{
 		font-size: 1.6em;
 		font-weight: bold;
-		line-height: 1.5em;
+		line-height: 1.8em;
 		
 }
 
 p{
 	line-height: 1.5em;
+	margin-bottom: 1em;
 }
 em{
 	font-style: italic;
@@ -79,35 +80,6 @@ a{
 }
 
 
-.top-line{
-	display: none;
-	@include breakpoint(large){
-		@include column(1);
-		position: relative;
-	}
-}
-.top-line hr{
-	display: none;
-	@include breakpoint(large){
-		display: block;
-		border-top: 1px solid #fff;
-		border-bottom: 0;
-		position: relative;
-		top: .35em;
-	}
-}
-
-p.open-statement{
-	font-size: 1em;
-	display:block;
-	text-align: center;
-	@include breakpoint(medium){
-		font-size: 1.3em;
-	}
-	@include breakpoint(large){
-		@include column(10);
-	}
-}
 
 
 .wrapper{
@@ -183,6 +155,7 @@ article{
 	}
 }
 
+/*
 .make-logos{
 	display: none;
 	@include breakpoint(medium){
@@ -212,6 +185,7 @@ article{
 			width: 75px;
 		}
 }
+*/
 
 .intro p{
 	font-size: 1.3em;
@@ -223,8 +197,9 @@ article{
 		background-image: inline-image('../images/yay_green.jpg');
 		background-position: center center;
 		background-repeat: no-repeat;
-		background-size: 155% auto;
+		background-size: 185% auto;
 		@include breakpoint(medium){
+			background-size: 115% auto;
 			background-position: center center;
 		}
 }
