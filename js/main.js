@@ -49,7 +49,15 @@ $(document).ready(function () {
 			
 		},
 		init: function(){
-			var ieCheck = $('body').hasClass('lt-ie10');
+			var ieCheck = $('html').hasClass('lt-ie9');
+
+			// older versions of IE get a warning message
+			if(ieCheck){
+				$('.ie-message .close-it').click(function(){
+					$('.ie-message').fadeOut('fast');
+					return false;
+				});
+			}
 
 			$('.activate-mail').on('click', function(e){
 				e.preventDefault();
@@ -87,14 +95,6 @@ $(document).ready(function () {
 				});
 
 			}
-
-
-		if(ieCheck){
-			$('.ie-message .close-it').click(function(){
-				$('.ie-message').fadeOut('fast');
-				return false;
-			});
-		}
 		}
 	};
 

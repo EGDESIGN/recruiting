@@ -367,11 +367,29 @@ footer a{
 
 .ie-message{
 	position: fixed;
-	bottom: 0;
+	top: 40%;
 	width: 100%;
 	background: $pink;
 	color: #fff;
 	padding: 40px;
+	  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
+	  opacity: .9;
+
+}
+
+.lt-ie9{
+
+	.wrapper *{
+		color: #000 !important;
+	}
+
+	.mail-icon{
+		display: none;
+	}
+
+	.ie-message .close-it{
+		color: #fff !important;
+	}
 }
 
 .ie-message .close-it{
