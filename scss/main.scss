@@ -98,6 +98,9 @@ p.open-statement{
 	font-size: 1em;
 	display:block;
 	text-align: center;
+	@include breakpoint(medium){
+		font-size: 1.3em;
+	}
 	@include breakpoint(large){
 		@include column(10);
 	}
