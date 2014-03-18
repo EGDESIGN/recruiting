@@ -19,21 +19,29 @@ $(document).ready(function () {
 			recruit.footerDrawer.addClass('working');
 			recruit.footerCta.fadeOut('fast');
 			recruit.footerDrawer.animate({
-			    width: "0"
-			  }, 500, function(){
-			  	recruit.footerDrawer.addClass('closed');
-			  	recruit.footerDrawer.removeClass('working');
-			  });
+				width: "0"
+			}, 300, function(){
+				recruit.footerDrawer.addClass('closed');
+				recruit.footer.animate({
+				top: "90%"
+				}, 200, function(){
+					recruit.footerDrawer.removeClass('working');
+				});
+			});
 		},
 		slideMailFooterOpen: function(){
 			recruit.footerDrawer.addClass('working');
-			recruit.footerDrawer.animate({
-			    width: "100%"
-			  }, 500, function(){
-			  	recruit.footerCta.fadeIn('fast');
-			  	recruit.footerDrawer.removeClass('closed');
-			  	recruit.footerDrawer.removeClass('working');
-			  });
+			recruit.footer.animate({
+				top: "0"
+				}, 200, function(){
+					recruit.footerDrawer.animate({
+						width: "100%"
+					}, 500, function(){
+						recruit.footerCta.fadeIn('fast');
+						recruit.footerDrawer.removeClass('closed');
+						recruit.footerDrawer.removeClass('working');
+					});
+				});
 		},
 		init: function(){
 			$('.activate-mail').on('click', function(e){
@@ -42,7 +50,7 @@ $(document).ready(function () {
 				if(!recruit.footerDrawer.hasClass('working')){
 					recruit.toggleMailFooter();
 				}
-			})
+			});
 			
 			recruit.isTouch = recruit.touchTest();
 			if(recruit.isTouch === false){
@@ -56,14 +64,18 @@ $(document).ready(function () {
 								recruit.footer.addClass('scrolled');
 								recruit.slideMailFooterClose();
 							}
-						} else {
+						}
+						/*
+						if (!recruit.footer.hasClass('un-scrolled')){
 							if(data.curTop<=footerThreshold){
 								recruit.footer.removeClass('scrolled');
+								recruit.footer.addClass('un-scrolled');
 								if(recruit.footerDrawer.hasClass('closed')){
 									recruit.slideMailFooterOpen();
 								}
 							}
 						}
+						*/
 					}
 				});
 			}

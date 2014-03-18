@@ -18,14 +18,6 @@
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsSetByUser": 0
 		},
-	"\/css\/main.css": {
-		"fileType": 16,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/css\/main.css",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsSetByUser": 0
-		},
 	"\/css\/print.css": {
 		"fileType": 16,
 		"ignore": 1,
