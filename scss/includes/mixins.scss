@@ -7,7 +7,7 @@
 // source: Chris Coyier //
 // http://css-tricks.com/media-queries-sass-3-2-and-codekit/ //
 //////////////////////////////////
-$max-width-inner: 800px;
+$max-width-inner: 900px;
 
 @mixin breakpoint($point) {
   @if $point == large {
@@ -24,7 +24,7 @@ $max-width-inner: 800px;
     @media (min-width: 400px)  { @content; }
   }
   @else if $point == headline2 {
-    @media (min-width: 550px)  { @content; }
+    @media (min-width: 500px)  { @content; }
   }
     @else if $point == headline3 {
     @media (min-width: 800px)  { @content; }

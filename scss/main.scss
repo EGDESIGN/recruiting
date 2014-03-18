@@ -4,6 +4,7 @@
 @import "includes/variables.scss";
 @import "includes/mixins.scss";
 
+
 .small-down{
 	display: inline;
 	@include breakpoint(medium){
@@ -25,15 +26,21 @@ body{
 	font-size: 16px;
 }
 
+h1, h2, p{ // animate text resizing
+	transition: all 400ms;
+}
+
+
 h1{
 		font-size: 2.4em;
 	
 }
 
 h2{
-		font-size: 1.5em;
+		font-size: 1.6em;
 		font-weight: bold;
-		line-height: 1.2em;
+		line-height: 1.5em;
+		
 }
 
 p{
@@ -70,25 +77,28 @@ a{
 
 
 .top-line{
-	@include breakpoint(medium){
+	display: none;
+	@include breakpoint(large){
 		@include column(1);
 		position: relative;
 	}
 }
 .top-line hr{
-	border-top: 1px solid #fff;
-	border-bottom: 0;
-	@include breakpoint(medium){
+	display: none;
+	@include breakpoint(large){
+		display: block;
+		border-top: 1px solid #fff;
+		border-bottom: 0;
 		position: relative;
 		top: .35em;
 	}
 }
 
-.open-statement{
-	font-size: 1.2em;
+p.open-statement{
+	font-size: 1em;
 	display:block;
 	text-align: center;
-	@include breakpoint(medium){
+	@include breakpoint(large){
 		@include column(10);
 	}
 }
@@ -160,9 +170,6 @@ article{
 }
 .intro{
 	margin-bottom: 40px;
-}
-
-#what .intro{
 	position: relative;
 	@include breakpoint(max-width){
 		margin-top: 40px;
@@ -208,11 +215,11 @@ article{
 #team{
 		@include column(12);
 		background-image: inline-image('../images/yay_green.jpg');
-		background-position: top center;
+		background-position: center center;
 		background-repeat: no-repeat;
-		background-size: 150% auto;
+		background-size: 155% auto;
 		@include breakpoint(medium){
-			backgrpund-position: center center;
+			background-position: center center;
 		}
 }
 
@@ -313,7 +320,7 @@ footer a{
 	}
 }
 .foot-wrap{
-	background: #656363;
+	background: rgba(101,99,99,.9);
 	height: 50px;
 	padding: 10px 0;
 	position: fixed;
@@ -333,9 +340,9 @@ footer a{
 	display: inline-block;
 	float: left;
 	height: 70px;
-	margin-left: 5%;
+	position: absolute;
+	right: 100px;
 		overflow: hidden;
-	padding-left: 100px;
 	@include breakpoint(medium){
 		height: 30px;
 	}
@@ -366,15 +373,14 @@ footer a{
 		@include column(4);
 	}	
 }
+
 #what .sub-unit-icon img{
 	display: none;
 	@include breakpoint(large){
-	border: 1px solid #000;
-	border-radius: 50%;
 	display: block;
 	height: auto;
-	margin: 0 5% 40px;
-	width: 90%;
+	margin: 0 auto 40px;
+	width: 70%;
 	}
 }
 
