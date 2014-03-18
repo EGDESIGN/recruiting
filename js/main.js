@@ -73,24 +73,17 @@ $(document).ready(function () {
 				var footerThreshold = 70;
 				skrollr.init({
 					beforerender: function(data){
-						//beforerender taps into the scroll listening of the skrollr plugin
-						if (!recruit.footer.hasClass('scrolled')){
-							if(data.curTop>footerThreshold){
-								recruit.footer.addClass('scrolled');
-								recruit.slideMailFooterClose();
-							}
-						}
-						/*
-						if (!recruit.footer.hasClass('un-scrolled')){
-							if(data.curTop<=footerThreshold){
-								recruit.footer.removeClass('scrolled');
-								recruit.footer.addClass('un-scrolled');
-								if(recruit.footerDrawer.hasClass('closed')){
-									recruit.slideMailFooterOpen();
+
+						if(!$('html').hasClass('lt-ie10')){
+
+							//beforerender taps into the scroll listening of the skrollr plugin
+							if (!recruit.footer.hasClass('scrolled')){
+								if(data.curTop>footerThreshold){
+									recruit.footer.addClass('scrolled');
+									recruit.slideMailFooterClose();
 								}
 							}
 						}
-						*/
 					}
 				});
 
