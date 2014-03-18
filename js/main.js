@@ -52,6 +52,7 @@ $(document).ready(function () {
 			var ieCheck = $('html').hasClass('lt-ie9');
 
 			// older versions of IE get a warning message
+			
 			if(ieCheck){
 				$('.ie-message .close-it').click(function(){
 					$('.ie-message').fadeOut('fast');
