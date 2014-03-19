@@ -84,7 +84,9 @@ a{
 
 
 .wrapper{
-	margin: 0 auto 40px;
+	border-bottom: 20px solid $dark-blue;
+	margin: 0 auto 0;
+	padding-bottom: 20px;
 	overflow: hidden;
 }
 
