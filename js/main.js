@@ -1,3 +1,8 @@
+/*
+This JS relies on jquery, jquery UI (just easing), and Skrollr.js.
+All this files are being automatically concatinated with this file by 
+CodeKit
+*/
 
 $(document).ready(function () {
 	var recruit ={
