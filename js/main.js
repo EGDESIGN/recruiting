@@ -28,7 +28,7 @@ $(document).ready(function () {
 			}, 300, function(){
 				recruit.footerDrawer.addClass('closed');
 				recruit.footer.animate({
-				top: "90%"
+				top: "75%"
 				}, 1100, 'easeOutBounce', function(){
 					recruit.footerDrawer.removeClass('working');
 				});
@@ -37,7 +37,7 @@ $(document).ready(function () {
 		slideMailFooterOpen: function(){
 			recruit.footerDrawer.addClass('working');
 			recruit.footer.animate({
-				top: '93%'
+				top: '78%'
 			}, 200, 'easeOutCubic', function(){
 				recruit.footer.animate({
 				top: "0"
