@@ -18,26 +18,6 @@
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsSetByUser": 0
 		},
-	"\/images\/logo_Bluebird_Amex.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 3969,
-		"inputAbbreviatedPath": "\/images\/logo_Bluebird_Amex.png",
-		"outputAbbreviatedPath": "\/images\/logo_Bluebird_Amex.png",
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/images\/logo_Serve_Amex.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 10540,
-		"inputAbbreviatedPath": "\/images\/logo_Serve_Amex.png",
-		"outputAbbreviatedPath": "\/images\/logo_Serve_Amex.png",
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
 	"\/images\/mail-icon.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -58,33 +38,13 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/placeholder1.png": {
-		"fileType": 32768,
+	"\/images\/meeting_blue_orig.jpg": {
+		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 316212,
-		"inputAbbreviatedPath": "\/images\/placeholder1.png",
-		"outputAbbreviatedPath": "\/images\/placeholder1.png",
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/images\/placeholder2.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 415883,
-		"inputAbbreviatedPath": "\/images\/placeholder2.png",
-		"outputAbbreviatedPath": "\/images\/placeholder2.png",
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/images\/placeholder3.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 438579,
-		"inputAbbreviatedPath": "\/images\/placeholder3.png",
-		"outputAbbreviatedPath": "\/images\/placeholder3.png",
+		"initialSize": 532593,
+		"inputAbbreviatedPath": "\/images\/meeting_blue_orig.jpg",
+		"outputAbbreviatedPath": "\/images\/meeting_blue_orig.jpg",
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
@@ -105,6 +65,16 @@
 		"initialSize": 556308,
 		"inputAbbreviatedPath": "\/images\/yay_green.jpg",
 		"outputAbbreviatedPath": "\/images\/yay_green.jpg",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/yay_green_orig.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 556308,
+		"inputAbbreviatedPath": "\/images\/yay_green_orig.jpg",
+		"outputAbbreviatedPath": "\/images\/yay_green_orig.jpg",
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
