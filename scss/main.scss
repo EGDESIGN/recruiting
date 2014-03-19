@@ -27,7 +27,7 @@ body{
 }
 
 h1, h2, p{ // animate text resizing
-	transition: all 400ms;
+	transition: all 300ms;
 }
 
 
@@ -155,37 +155,6 @@ article{
 	}
 }
 
-/*
-.make-logos{
-	display: none;
-	@include breakpoint(medium){
-		display: block;
-		position: absolute;
-			top: -20px;
-			right:0;
-	}
-}
-
-.brand-logo{
-		background-position: top left;
-		background-repeat: no-repeat;
-		background-size: 100% auto;
-		display: inline-block;
-		text-indent: -9999px;
-		height: 34px;
-		width: 109px;
-		&.serve-logo{
-			background-image: inline-image('../images/logo_Serve_Amex.png');
-			margin-left: 1em;
-		}
-		&.bb-logo{
-			background-image: inline-image('../images/logo_BLuebird_Amex.png');
-			position: relative;
-			top: -5px;
-			width: 75px;
-		}
-}
-*/
 
 .intro p{
 	font-size: 1.3em;
@@ -333,6 +302,7 @@ footer a{
 .sub-units{
 	@include column(12);
 	padding-bottom: 40px;
+	position: relative;
 	@include breakpoint(large){
 		@include column(6);
 	}
@@ -354,29 +324,52 @@ footer a{
 	}	
 }
 
-#what .sub-unit-icon img{
+#what .sub-unit-icon{
 	display: none;
+
+
 	@include breakpoint(large){
-	display: block;
-	height: auto;
-	margin: 0 auto 40px;
-	width: 70%;
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: 100%;
+		display: block;
+		height: 200px;
+		margin: 0 auto 40px;
+		width: 70%;
 	}
+
+	&.collaboration{
+		background-image: inline-image('../images/Collaboration_Icons_Orange.svg');
+	}
+
+	&.user-centered{
+		background-image: inline-image('../images/UserCentered_Icons_Pink.svg');
+	}
+
+	&.process-driven{
+		background-image: inline-image('../images/Process_Icons_Blue.svg');
+	}
+
+}
+
+.throb:hover .user-centered{
+	-webkit-animation-name: throb;
+	-webkit-animation-duration: .9s;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-timing-function: ease-out;
 }
 
 
-.ie-message{
-	position: fixed;
-	top: 40%;
-	width: 100%;
-	background: $pink;
-	color: #fff;
-	padding: 40px;
-	  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
-	  opacity: .9;
-
+@-webkit-keyframes throb {
+    0% { -webkit-transform: scale(1); }
+    50% { -webkit-transform: scale(1.1); }
+    100% { -webkit-transform: scale(1); }
 }
 
+
+
+
+// ie8 silliness
 .lt-ie9{
 
 	.wrapper *{
@@ -387,14 +380,22 @@ footer a{
 		display: none;
 	}
 
+	.ie-message{
+	position: fixed;
+	top: 40%;
+	width: 100%;
+	background: $pink;
+	color: #fff;
+	padding: 40px;
+	  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
+
+	}
 	.ie-message .close-it{
 		color: #fff !important;
-	}
+		position: absolute;
+		right: 10px;
+		top: 10px;
+		}
 }
 
-.ie-message .close-it{
-	color: #fff;
-	position: absolute;
-	right: 10px;
-	top: 10px;
-}
+

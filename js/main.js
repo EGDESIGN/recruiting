@@ -24,7 +24,7 @@ $(document).ready(function () {
 				recruit.footerDrawer.addClass('closed');
 				recruit.footer.animate({
 				top: "90%"
-				}, 800, 'easeOutBounce', function(){
+				}, 1100, 'easeOutBounce', function(){
 					recruit.footerDrawer.removeClass('working');
 				});
 			});
@@ -52,7 +52,7 @@ $(document).ready(function () {
 			var ieCheck = $('html').hasClass('lt-ie9');
 
 			// older versions of IE get a warning message
-			
+
 			if(ieCheck){
 				$('.ie-message .close-it').click(function(){
 					$('.ie-message').fadeOut('fast');
