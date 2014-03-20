@@ -1,5 +1,5 @@
 /*
-This JS relies on jquery, jquery UI (just easing), and Skrollr.js.
+This JS relies on jquery, jquery UI (just easing),smartresize.js (resize debounce) and Skrollr.js.
 All this files are being automatically concatinated with this file by 
 CodeKit
 */
@@ -91,6 +91,13 @@ $(document).ready(function () {
 							}
 						}
 					}
+				});
+
+				// force skrollr to reasses window height on resize (throttled by smartresize plugin)
+				// this fixes an error where skrollr would make the page too short sometimes.
+				$(window).smartresize(function(){
+				  console.log('hh');
+					scrollEFX.refresh();
 				});
 
 			}
