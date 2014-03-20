@@ -77,7 +77,7 @@ $(document).ready(function () {
 			if(recruit.isTouch === false && !ieCheck){
 				// intialize skrollr parallax plugin if not a touch device.
 				var footerThreshold = 70;
-				skrollr.init({
+				var scrollEFX = skrollr.init({
 					beforerender: function(data){
 
 						if(!$('html').hasClass('lt-ie10')){
