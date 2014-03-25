@@ -304,18 +304,20 @@ header a{
 
 footer{
 	@include column(12);
+
+	a{
+		@include column(12);
 	background: $dark-blue;
 	color: #fff;
 	height: 50px;
 	width: 100%;
 	text-align: center;
 	padding-top: 1em;
-
-	a{
-		color: #fff;
 	}
 	a:hover{
-		color: $yellow;
+		background: $yellow;
+		color: #fff;
+		text-decoration: none;
 	}
 }
 
