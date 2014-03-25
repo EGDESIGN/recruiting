@@ -7,49 +7,39 @@ CodeKit
 $(document).ready(function () {
 	var recruit ={
 		isTouch: false,
-		footer: $('footer'),
-		footerDrawer: $('.foot-wrap'),
-		footerCta: $('.foot-wrap .cta'),
+		header: $('header'),
+		headerDrawer: $('.head-wrap'),
+		headerCta: $('.head-wrap .cta'),
 		touchTest: function(){
 			return !!('ontouchstart' in window) || !!('onmsgesturechange' in window) || (navigator.appVersion.toLowerCase().indexOf("mobile") !== -1);
 		},
-		toggleMailFooter: function(){
-			if(recruit.footerDrawer.hasClass('closed')){
-				recruit.slideMailFooterOpen();
+		toggleMailheader: function(){
+			if(recruit.headerDrawer.hasClass('closed')){
+				recruit.slideMailheaderOpen();
 			} else{
-				recruit.slideMailFooterClose();
+				recruit.slideMailheaderClose();
 			}
 		},
-		slideMailFooterClose: function(){
-			recruit.footerDrawer.addClass('working');
-			recruit.footerCta.fadeOut('fast');
-			recruit.footerDrawer.animate({
-				width: "0"
-			}, 300, function(){
-				recruit.footerDrawer.addClass('closed');
-				recruit.footer.animate({
-				top: "75%"
-				}, 1100, 'easeOutBounce', function(){
-					recruit.footerDrawer.removeClass('working');
-				});
-			});
-		},
-		slideMailFooterOpen: function(){
-			recruit.footerDrawer.addClass('working');
-			recruit.footer.animate({
-				top: '78%'
-			}, 200, 'easeOutCubic', function(){
-				recruit.footer.animate({
-				top: "0"
-				}, 200, function(){
-					recruit.footerDrawer.animate({
-						width: "100%"
-					}, 500, 'easeOutQuad', function(){
-						recruit.footerCta.fadeIn('fast');
-						recruit.footerDrawer.removeClass('closed');
-						recruit.footerDrawer.removeClass('working');
+		slideMailheaderClose: function(){
+			recruit.headerDrawer.addClass('working');
+			recruit.headerCta.fadeOut('fast',
+				function(){
+						recruit.headerDrawer.animate({
+						width: "0"
+					}, 300, function(){
+						recruit.headerDrawer.addClass('closed');
+						recruit.headerDrawer.removeClass('working');
 					});
 				});
+		},
+		slideMailheaderOpen: function(){
+			recruit.headerDrawer.addClass('working');
+			recruit.headerDrawer.animate({
+						width: "100%"
+					}, 500, 'easeOutQuad', function(){
+						recruit.headerCta.fadeIn('fast');
+						recruit.headerDrawer.removeClass('closed');
+						recruit.headerDrawer.removeClass('working');
 			});
 			
 		},
@@ -68,25 +58,28 @@ $(document).ready(function () {
 			$('.activate-mail').on('click', function(e){
 				e.preventDefault();
 
-				if(!recruit.footerDrawer.hasClass('working')){
-					recruit.toggleMailFooter();
+				if(!recruit.headerDrawer.hasClass('working')){
+					recruit.toggleMailheader();
 				}
 			});
 			
 			recruit.isTouch = recruit.touchTest();
 			if(recruit.isTouch === false && !ieCheck){
 				// intialize skrollr parallax plugin if not a touch device.
-				var footerThreshold = 70;
+				var headerThreshold = 70;
 				var scrollEFX = skrollr.init({
 					beforerender: function(data){
-
+						//beforerender taps into the scroll listening of the skrollr plugin
 						if(!$('html').hasClass('lt-ie10')){
-
-							//beforerender taps into the scroll listening of the skrollr plugin
-							if (!recruit.footer.hasClass('scrolled')){
-								if(data.curTop>footerThreshold){
-									recruit.footer.addClass('scrolled');
-									recruit.slideMailFooterClose();
+							if (!recruit.header.hasClass('scrolled')){
+								if(data.curTop>headerThreshold){
+									recruit.header.addClass('scrolled');
+									recruit.slideMailheaderClose();
+								}
+							} else {
+								if(recruit.header.hasClass('scrolled') && data.curTop<=headerThreshold){
+										recruit.header.removeClass('scrolled');
+										recruit.slideMailheaderOpen();
 								}
 							}
 						}
@@ -96,7 +89,6 @@ $(document).ready(function () {
 				// force skrollr to reasses window height on resize (throttled by smartresize plugin)
 				// this fixes an error where skrollr would make the page too short sometimes.
 				$(window).smartresize(function(){
-				  console.log('hh');
 					scrollEFX.refresh();
 				});
 

@@ -47,9 +47,6 @@ p{
 	line-height: 1.5em;
 	margin-bottom: 1em;
 }
-em{
-	font-style: italic;
-}
 
 a{
 	color: $orange;
@@ -84,7 +81,7 @@ a{
 
 
 .wrapper{
-	border-bottom: 50px solid $dark-blue;
+	// /border-bottom: 50px solid $dark-blue;
 	margin: 0 auto 0;
 	padding-bottom: 20px;
 	overflow: hidden;
@@ -231,9 +228,9 @@ article{
 	}
 }
 
-// footer
+// header
 
-footer{
+header{
 	color: #fff;
 	margin: 0 0;
 	float: left;
@@ -243,7 +240,7 @@ footer{
 	width: 100%;
 	z-index: 9999;
 }
-footer a{
+header a{
 	color: $dark-blue;
 	&:hover{
 		color: $yellow;
@@ -257,7 +254,7 @@ footer a{
 
 .activate-mail{
 	display: inline-block;
-	background-color: $pink;
+	background-color: $dark-blue;
 	background-image: inline-image('../images/mail-icon.png');
 	background-position: center center;
 	background-repeat: no-repeat;
@@ -272,8 +269,9 @@ footer a{
 		background-color: $yellow;
 	}
 }
-.foot-wrap{
-	background: rgba(101,99,99,.9);
+.head-wrap{
+	//background: rgba(2,91,161,.9);
+	background: rgb(2,91,161);
 	height: 50px;
 	padding: 10px 0;
 	position: fixed;
@@ -292,14 +290,30 @@ footer a{
 	display: inline-block;
 	float: left;
 	height: 70px;
-	position: absolute;
-	right: 20px;
-		overflow: hidden;
+	width: 100%;
+	text-align: center;
 	@include breakpoint(medium){
 		height: 30px;
 		right: 40px;
 	}
 
+}
+
+footer{
+	@include column(12);
+	background: $light-blue;
+	color: #fff;
+	height: 50px;
+	width: 100%;
+	text-align: center;
+	padding-top: 1em;
+
+	a{
+		color: #fff;
+	}
+	a:hover{
+		color: $yellow;
+	}
 }
 
 //4-up layouts
