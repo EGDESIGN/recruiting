@@ -291,17 +291,20 @@ header a{
 	float: left;
 	height: 70px;
 	width: 100%;
-	text-align: center;
+	padding-right: 20px;
+	text-align: right;
 	@include breakpoint(medium){
 		height: 30px;
 		right: 40px;
+		padding-right: 0;
+		text-align: center;
 	}
 
 }
 
 footer{
 	@include column(12);
-	background: $light-blue;
+	background: $dark-blue;
 	color: #fff;
 	height: 50px;
 	width: 100%;
