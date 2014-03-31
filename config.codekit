@@ -38,16 +38,6 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/meeting_blue_orig.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 532593,
-		"inputAbbreviatedPath": "\/images\/meeting_blue_orig.jpg",
-		"outputAbbreviatedPath": "\/images\/meeting_blue_orig.jpg",
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
 	"\/images\/red-eg-logo.png": {
 		"fileType": 32768,
 		"ignore": 0,
