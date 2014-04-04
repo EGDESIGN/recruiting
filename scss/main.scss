@@ -6,379 +6,379 @@
 
 
 .small-down{
-	display: inline;
-	@include breakpoint(medium){
-		display: none;
-	}
+  display: inline;
+  @include breakpoint(medium){
+    display: none;
+  }
 }
 
 .med-up{
-	display: none;
-	@include breakpoint(medium){
-		display: inline;
-	}
+  display: none;
+  @include breakpoint(medium){
+    display: inline;
+  }
 }
 
 body{
-	background: #f7f7f7;
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-	font-weight: 200;
-	font-size: 16px;
+  background: #f7f7f7;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 200;
+  font-size: 16px;
 }
 
 h1, h2, p{ // animate text resizing
-	transition: all 300ms;
+  transition: all 300ms;
 }
 
 
 h1{
-	font-size: 2.4em;
+  font-size: 2.4em;
 }
 
 h2{
-	font-size: 1.6em;
-	font-weight: bold;
-	line-height: 1.8em;
+  font-size: 1.6em;
+  font-weight: bold;
+  line-height: 1.8em;
 
 }
 
 p{
-	line-height: 1.5em;
-	margin-bottom: 1em;
+  line-height: 1.5em;
+  margin-bottom: 1em;
 }
 
 a{
-	color: $orange;
-	text-decoration: none;
-	&:hover{
-		color: $light-blue;
-		text-decoration: underline;
-	}
+  color: $orange;
+  text-decoration: none;
+  &:hover{
+    color: $light-blue;
+    text-decoration: underline;
+  }
 }
 
 .overlay-copy h2.fallback{
-	display: none;
+  display: none;
 }
 
 
 .overlay-copy p {
-	font-size: 1.2em;
-	font-weight: 400;
+  font-size: 1.2em;
+  font-weight: 400;
 }
 
 
 
 
 .wrapper{
-	// /border-bottom: 50px solid $dark-blue;
-	margin: 0 auto 0;
-	padding-bottom: 20px;
-	overflow: hidden;
-}
+    // /border-bottom: 50px solid $dark-blue;
+    margin: 0 auto 0;
+    padding-bottom: 20px;
+    overflow: hidden;
+  }
 
 
-article{
-	padding: 40px 10%;
-	@include column(12);
-}
+  article{
+    padding: 40px 10%;
+    @include column(12);
+  }
 
-.constrained{
-	@include breakpoint(max-width){
-		float: none;
-		display: block;
-		padding: 40px 0;
-		width: $max-width-inner;
-		margin: 0 auto;
-	}
-}
-
-
-.full-bleed{
-	position: relative;
-	padding: 0;
-}
-.overlay-copy{
-	@include column(12);
-	color: #fff;
-	padding: 20px;
-	position: relative;
-	overflow: hidden;
-
-	@include breakpoint(medium){
-		padding: 60px 40px;
-		margin: 0 10%;
-		width: 80%;
-	}
-	@include breakpoint(large){
-		padding: 80px 40px;
-		margin: 0 10%;
-	}
-
-	@include breakpoint(max-width){
-		float: none;
-		display: block;
-		width: $max-width-inner;
-		margin: 0 auto;
-	}
-}
+  .constrained{
+    @include breakpoint(max-width){
+      float: none;
+      display: block;
+      padding: 40px 0;
+      width: $max-width-inner;
+      margin: 0 auto;
+    }
+  }
 
 
+  .full-bleed{
+    position: relative;
+    padding: 0;
+  }
+  .overlay-copy{
+    @include column(12);
+    color: #fff;
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
 
-#about-intro{
-	background-image: inline-image('../images/meeting_blue.jpg');
-	background-position: top center;
-	background-repeat: no-repeat;
-	background-position: fixed;
-	background-size: 170% auto;
-	padding: 50px 0;
-	@include breakpoint(medium){
-		background-size: 100% auto;
-	}
-}
+    @include breakpoint(medium){
+      padding: 60px 40px;
+      margin: 0 10%;
+      width: 80%;
+    }
+    @include breakpoint(large){
+      padding: 80px 40px;
+      margin: 0 10%;
+    }
 
-.svg-header{
-	margin-top: 20%;
-	width: 100%;
-	@include breakpoint(medium){
-		margin-top: 10%;
-	}
-	img{
-		height: auto;
-		width: 100%;
-	}
-
-	&.our-team{
-		margin-bottom: 5%;
-	}
-}
-
-.intro{
-	margin-bottom: 40px;
-	position: relative;
-	@include breakpoint(max-width){
-		margin-top: 40px;
-		float: left;
-	}
-}
-
-
-.intro p{
-	font-size: 1.3em;
-}
-
-
-#team{
-	@include column(12);
-	background-image: inline-image('../images/yay_green.jpg');
-	background-position: center center;
-	background-repeat: no-repeat;
-	background-size: 185% auto;
-	@include breakpoint(medium){
-		background-size: 115% auto;
-		background-position: center center;
-	}
-}
-
-#team .overlay-copy{
-	padding-bottom: 40px;
-	padding-top: 40px;
-}
+    @include breakpoint(max-width){
+      float: none;
+      display: block;
+      width: $max-width-inner;
+      margin: 0 auto;
+    }
+  }
 
 
 
-.role-row .sub-units{
-	@include breakpoint(medium){
-		position: relative;
-	}
-}
-.role-row .sub-unit-wrap{
-	@include breakpoint(medium){
-		margin-left: 8em;
-	}
-}
+  #about-intro{
+    background-image: inline-image('../images/meeting_blue.jpg');
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-position: fixed;
+    background-size: 170% auto;
+    padding: 50px 0;
+    @include breakpoint(medium){
+      background-size: 100% auto;
+    }
+  }
+
+  .svg-header{
+    margin-top: 20%;
+    width: 100%;
+    @include breakpoint(medium){
+      margin-top: 10%;
+    }
+    img{
+      height: auto;
+      width: 100%;
+    }
+
+    &.our-team{
+      margin-bottom: 5%;
+    }
+  }
+
+  .intro{
+    margin-bottom: 40px;
+    position: relative;
+    @include breakpoint(max-width){
+      margin-top: 40px;
+      float: left;
+    }
+  }
+
+
+  .intro p{
+    font-size: 1.3em;
+  }
+
+
+  #team{
+    @include column(12);
+    background-image: inline-image('../images/yay_green.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 185% auto;
+    @include breakpoint(medium){
+      background-size: 115% auto;
+      background-position: center center;
+    }
+  }
+
+  #team .overlay-copy{
+    padding-bottom: 40px;
+    padding-top: 40px;
+  }
 
 
 
-.role-abbrv{
-	font-size: 4em;
-	&.xd{
-		color: $light-blue;
-	}
-	&.xt{
-		color: $green;
-	}
-	&.cs{
-		color: $pink;
-	}
-	&.dm{
-		color: $orange;
-	}
-	@include breakpoint(medium){
-		position: absolute;
-		left: 0;
-		top: -22px;
-	}
-}
+  .role-row .sub-units{
+    @include breakpoint(medium){
+      position: relative;
+    }
+  }
+  .role-row .sub-unit-wrap{
+    @include breakpoint(medium){
+      margin-left: 8em;
+    }
+  }
+
+
+
+  .role-abbrv{
+    font-size: 4em;
+    &.xd{
+      color: $light-blue;
+    }
+    &.xt{
+      color: $green;
+    }
+    &.cs{
+      color: $pink;
+    }
+    &.dm{
+      color: $orange;
+    }
+    @include breakpoint(medium){
+      position: absolute;
+      left: 0;
+      top: -22px;
+    }
+  }
 
 // header
 
 header{
-	color: #fff;
-	margin: 0 0;
-	float: left;
-	position: fixed;
-	top: 0;
-	text-align: left;
-	width: 100%;
-	z-index: 9999;
+  color: #fff;
+  margin: 0 0;
+  float: left;
+  position: fixed;
+  top: 0;
+  text-align: left;
+  width: 100%;
+  z-index: 9999;
 }
 header a{
-	color: $dark-blue;
-	&:hover{
-		color: $yellow;
-	}
+  color: $dark-blue;
+  &:hover{
+    color: $yellow;
+  }
 }
 .mail-icon{
-	position: absolute;
-	left:0;
-	top: 0;
+  position: absolute;
+  left:0;
+  top: 0;
 }
 
 .activate-mail{
-	display: inline-block;
-	background-color: $dark-blue;
-	background-image: inline-image('../images/mail-icon.svg');
-	background-position: center center;
-	background-repeat: no-repeat;
-	background-size: 55%;
-	text-indent: -9999px;
-	height: 50px;
-	position: fixed;
-	width: 50px;
-	z-index:999;
+  display: inline-block;
+  background-color: $dark-blue;
+  background-image: inline-image('../images/mail-icon.svg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 55%;
+  text-indent: -9999px;
+  height: 50px;
+  position: fixed;
+  width: 50px;
+  z-index:999;
 
-	&:hover{
-		background-color: $yellow;
-	}
+  &:hover{
+    background-color: $yellow;
+  }
 }
 .head-wrap{
-	//background: rgba(2,91,161,.9);
-	background: rgb(2,91,161);
-	height: 50px;
-	padding: 10px 0;
-	position: fixed;
-	width: 100%;
-	z-index: 888;
-	@include breakpoint(max-width){
-		float: none;
-		display: block;
-		padding: 10px 0;
-		margin: 0 auto;
-	}
-}
+    //background: rgba(2,91,161,.9);
+    background: rgb(2,91,161);
+    height: 50px;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    z-index: 888;
+    @include breakpoint(max-width){
+      float: none;
+      display: block;
+      padding: 10px 0;
+      margin: 0 auto;
+    }
+  }
 
 
-.cta{
-	display: inline-block;
-	float: left;
-	height: 70px;
-	width: 100%;
-	padding-right: 20px;
-	text-align: right;
-	@include breakpoint(medium){
-		height: 30px;
-		right: 40px;
-		padding-right: 0;
-		text-align: center;
-	}
+  .cta{
+    display: inline-block;
+    float: left;
+    height: 70px;
+    width: 100%;
+    padding-right: 20px;
+    text-align: right;
+    @include breakpoint(medium){
+      height: 30px;
+      right: 40px;
+      padding-right: 0;
+      text-align: center;
+    }
 
-}
+  }
 
-footer{
-	@include column(12);
+  footer{
+    @include column(12);
 
-	a{
-		@include column(12);
-		background: $dark-blue;
-		color: #fff;
-		height: 50px;
-		width: 100%;
-		text-align: center;
-		padding-top: 1em;
-	}
-	a:hover{
-		background: $yellow;
-		color: #fff;
-		text-decoration: none;
-	}
-}
+    a{
+      @include column(12);
+      background: $dark-blue;
+      color: #fff;
+      height: 50px;
+      width: 100%;
+      text-align: center;
+      padding-top: 1em;
+    }
+    a:hover{
+      background: $yellow;
+      color: #fff;
+      text-decoration: none;
+    }
+  }
 
 //4-up layouts
 .sub-units{
-	@include column(12);
-	padding-bottom: 40px;
-	position: relative;
-	@include breakpoint(large){
-		@include column(6);
-	}
+  @include column(12);
+  padding-bottom: 40px;
+  position: relative;
+  @include breakpoint(large){
+    @include column(6);
+  }
 }
 .odd{
-	@include breakpoint(large){
-		padding-right: 40px;
-	}
+  @include breakpoint(large){
+    padding-right: 40px;
+  }
 }
 .role-row{
-	clear: both;
+  clear: both;
 }
 
 //3-up layouts
 #what .sub-units{
-	@include breakpoint(large){
-		padding-right: 20px;
-		@include column(4);
-	}	
+  @include breakpoint(large){
+    padding-right: 20px;
+    @include column(4);
+  }   
 }
 
 #what .sub-unit-icon{
-	display: none;
+  display: none;
 
 
-	@include breakpoint(large){
-		background-position: center center;
-		background-repeat: no-repeat;
-		background-size: 100%;
-		display: block;
-		height: 200px;
-		margin: 0 auto 40px;
-		width: 70%;
-	}
+  @include breakpoint(large){
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: block;
+    height: 200px;
+    margin: 0 auto 40px;
+    width: 70%;
+  }
 
-	&.collaboration{
-		background-image: inline-image('../images/Collaboration_Icons_Orange.svg');
-	}
+  &.collaboration{
+    background-image: inline-image('../images/Collaboration_Icons_Orange.svg');
+  }
 
-	&.user-centered{
-		background-image: inline-image('../images/UserCentered_Icons_Pink.svg');
-	}
+  &.user-centered{
+    background-image: inline-image('../images/UserCentered_Icons_Pink.svg');
+  }
 
-	&.process-driven{
-		background-image: inline-image('../images/Process_Icons_Blue.svg');
-	}
+  &.process-driven{
+    background-image: inline-image('../images/Process_Icons_Blue.svg');
+  }
 
 }
 
 .throb:hover .user-centered{
-	-webkit-animation-name: throb;
-	-webkit-animation-duration: 1.1s;
-	-webkit-animation-iteration-count: infinite;
-	-webkit-animation-timing-function: ease-out;
+  -webkit-animation-name: throb;
+  -webkit-animation-duration: 1.1s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-out;
 }
 
 
 @-webkit-keyframes throb {
-	0% { -webkit-transform: scale(1); }
-	50% { -webkit-transform: scale(1.1); }
-	100% { -webkit-transform: scale(1); }
+  0% { -webkit-transform: scale(1); }
+  50% { -webkit-transform: scale(1.1); }
+  100% { -webkit-transform: scale(1); }
 }
 
 
@@ -387,60 +387,60 @@ footer{
 // ie8 silliness
 .lt-ie9{
 
-	.svg-header{
-		display: none;
-	}
+  .svg-header{
+    display: none;
+  }
 
-	.overlay-copy h2.fallback{
-		display: block;
-		text-align: center;
-		font-size: 2.4em;
-		@include breakpoint(headline1){
-			font-size: 3em;
-		}
-		@include breakpoint(headline2){
-			font-size: 3.6em;
-		}
+  .overlay-copy h2.fallback{
+    display: block;
+    text-align: center;
+    font-size: 2.4em;
+    @include breakpoint(headline1){
+      font-size: 3em;
+    }
+    @include breakpoint(headline2){
+      font-size: 3.6em;
+    }
 
-		@include breakpoint(headline3){
-			font-size: 6em;
-		}
-	}
+    @include breakpoint(headline3){
+      font-size: 6em;
+    }
+  }
 
-	.wrapper *{
-		color: #000 !important;
-	}
+  .wrapper *{
+    color: #000 !important;
+  }
 
-	.mail-icon{
-		display: none;
-	}
+  .mail-icon{
+    display: none;
+  }
 
-	.ie-message{
-		position: fixed;
-		top: 40%;
-		width: 100%;
-		background: $pink;
-		color: #fff;
-		padding: 40px;
-		-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
+  .ie-message{
+    position: fixed;
+    top: 40%;
+    width: 100%;
+    background: $pink;
+    color: #fff;
+    padding: 40px;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
 
-	}
-	.ie-message .close-it{
-		color: #fff !important;
-		position: absolute;
-		right: 10px;
-		top: 10px;
-	}
+  }
+  .ie-message .close-it{
+    color: #fff !important;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+  }
 
-	.head-wrap,
-	footer a, footer a:hover{
-		background: #000;
-		color: #fff;
-	}
+  .head-wrap,
+  footer a, footer a:hover{
+    background: #000;
+    color: #fff;
+  }
 
-	.cta, .cta .med-up, .cta a{
-		color: #fff  !important;
-	}
+  .cta, .cta .med-up, .cta a{
+    color: #fff  !important;
+  }
 }
 
 
